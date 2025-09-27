@@ -1,0 +1,132 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        padding: 1vh 2vw;
+        box-shadow: 0 0.2vh 0.4vh rgba(0, 0, 0, 0.1);
+    }
+    .logo h1{
+        margin-left: 2vw;
+        font-size: 2.4vw;
+        color: #333;
+    }
+    .tab{
+        display: flex;
+        align-items: center;
+        margin-right: 8vw;
+    }
+    .tab div{
+        margin-left: 2vw;
+    }
+    .tab a{
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2vw;
+        transition: color 0.3s ease;
+    }
+    .tab a:hover{
+        color: #007BFF;
+    }
+    .btn{
+        margin-right: 2vw;
+    }
+    .btn input{
+        padding: 0.8vh 1.6vw;
+        font-size: 1.2vw;
+        border: none;
+        background-color: #007BFF;
+        color: white;
+        border-radius: 0.4vw;
+    }
+    .btn input:hover{
+        background-color: #0056b3;
+    }
+    .hero{
+        width: 100vw;
+        height: 80vh;
+        background-color: #f5f5f5;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin-left: 10vw;
+        margin-top: 5vh;
+    }
+    .txt, #txt {
+        font-size: 3vw;
+        color: rgba(0, 0, 0, 0.637);
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        margin-bottom: 1vh;
+    }
+    #txt {
+        color: #007BFF;
+    }
+    .txt2{
+        font-size: 1vw;
+        color: rgba(0, 0, 0, 0.466);
+        font-family: 'Arial', sans-serif;
+        margin-bottom: 0.5vh;
+    }
+    .btn2{
+        margin-top: 2vh;
+        padding: 1.5vh 2vw;
+        border-radius: 1vw;
+        background-color: #0056b3;
+        color: white;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        font-size: 1.2vw;
+        cursor: pointer;
+        width: fit-content;
+    }
+    .hero img{
+        width: 30vw;
+        height: auto;
+        max-height: 60vh;
+        margin-right: 8vw;
+        object-fit: contain;
+    }
+    @media (max-width: 900px) {
+        .hero {
+            flex-direction: column;
+            height: auto;
+        }
+        .hero-content {
+            margin-left: 0;
+            margin-top: 4vh;
+            align-items: center;
+        }
+        .hero img {
+            width: 60vw;
+            margin: 4vh 0;
+        }
+        .txt, #txt {
+            font-size: 5vw;
+        }
+        .txt2, .btn2, .tab a, .btn input {
+            font-size: 2vw;
+        }
+    }
+</style>
